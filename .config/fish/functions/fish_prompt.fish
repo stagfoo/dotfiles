@@ -1,0 +1,1 @@
+/Users/alex/happyaku/fish_prompt.fish
