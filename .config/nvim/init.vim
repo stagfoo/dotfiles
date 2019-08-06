@@ -123,14 +123,14 @@ set cursorline
 
 " Theme and Styling
 set t_Co=256
-set background=dark
+"set background=dark
 
 if (has("termguicolors"))
   set termguicolors
 endif
 
 let base16colorspace=256  " Access colors present in 256 colorspace
-colorscheme spacegray
+" colorscheme spacegray
 " colorscheme spacemacs-theme
 
 let g:spacegray_underline_search = 1
@@ -374,3 +374,5 @@ inoremap <expr> <c-x><c-k> fzf#vim#complete#word({'left': '15%'})
 " Vim-Alchemist Mappings
 autocmd FileType elixir nnoremap <buffer> <leader>h :call alchemist#exdoc()<CR>
 autocmd FileType elixir nnoremap <buffer> <leader>d :call alchemist#exdef()<CR>
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists(“s:std_in”) | NERDTree | endif

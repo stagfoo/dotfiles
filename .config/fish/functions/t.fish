@@ -1,3 +1,3 @@
 function t
-  tree -L 1
+  tree -a -L 1
 end
