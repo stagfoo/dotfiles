@@ -1,1 +1,1 @@
-/Users/alex/happyaku/fish_prompt.fish
+/Volumes/alex-projects/projects/double-decta/fish_prompt.fish
